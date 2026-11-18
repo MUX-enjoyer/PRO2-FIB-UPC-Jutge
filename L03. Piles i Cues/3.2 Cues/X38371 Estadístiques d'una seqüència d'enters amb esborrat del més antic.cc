@@ -21,7 +21,9 @@ int main() {
     min = max = n;
     while (n <= 1000 && n >= -1001) {
         if (n != -1001) {
-            if (n < min) min = n;
+            // Si la cua estava buida, aquest nombre és alhora el mínim i el màxim
+            if (cua.empty()) min = max = n;
+            else if (n < min) min = n;
             else if (n > max) max = n;
             suma += n;
             cua.push(n);
@@ -34,8 +36,6 @@ int main() {
         }
         
         if (cua.empty()) {
-            int min = 1001;
-            int max = -1001;
             suma = 0;
             cout << 0;
         }
