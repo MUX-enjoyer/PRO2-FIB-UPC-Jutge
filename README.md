@@ -101,5 +101,9 @@ Tots els exercicis del Jutge del quatrimestre de primavera del curs 2024-2025 de
 - X18899   Arbre de sumes d'un arbre n-ari
 
 
+### Pràctica: Encriptació de missatges (Tardor 2026-2027 Q1)
+Carpeta `PRÀCTICA ENCRIPTACIÓ 2026`: enunciat (`ENUNCIAT/`) i implementació de la fase 2 fins abans de l'encriptació (afegir / esborrar / llistar missatges i alfabets). Compilar amb `make` i provar amb `./program.exe < sample.inp` (el `sample.inp` i el `sample.cor` són dins `ENUNCIAT/practica.zip`).
+
+
 RogeR Bitlloch | roger.bitlloch@estudiantat.upc.edu
 

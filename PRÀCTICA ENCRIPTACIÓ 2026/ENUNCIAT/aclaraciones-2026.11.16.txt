@@ -1,0 +1,8 @@
+﻿16/11/2026
+
+Algunas aclaraciones y puntualizaciones sobre la especificación de la práctica
+1. En la clase Mensaje (fichero Mensaje.hh), se indica queMensaje(const string& s) crea un objeto Mensaje con contenido "s" yalfabeto ---neutro---.  Esto significa el alfabeto vacío, el que secra con la constructora por defecto Alfabeto().
+2. En la especificación de los métodos
+CjtMensajes::encriptar(idm, ca, clave, codif, ok)CjtMensajes::encriptar(idm, b, codif, ok)
+declarados en CjtMensajes.hh se indicaba como parte de la precondiciónque idm es el identificador de un mensaje existente en elCjtMensaje dado. Esto no es así: si en cualquiera de ellas, idm es unindentificador no existente entonces el método retorna ok == false (yya no tiene nada más que hacer); si idm existente entonces hacen laencriptación que corresponda devolviendo el resultado a través delstring codif y ok == true,
+Estas aclaraciones también se han incorporado en los ficheros Mensaje.hhy CjtMensajes.hh y el archivo .zip descargable desde la web de la asignaturase ha actualizado.
